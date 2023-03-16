@@ -2,7 +2,7 @@
 
 # Libraries
 import sys
-sys.path.append('/home/gerardo/Escritorio/airflow')
+sys.path.append('path')
 from airflow import DAG
 from plugins.random_selection import random_numpy
 from datetime import datetime, timedelta

@@ -2,7 +2,7 @@
 
 # Libraries
 import sys
-sys.path.append('/home/gerardo/Escritorio/airflow')
+sys.path.append('path')
 from airflow import DAG
 from plugins.project_01.random_write import random_write
 from datetime import datetime, timedelta
@@ -26,5 +26,5 @@ with DAG(
     task_1 = PythonOperator(
         task_id = 'random_numpy',
         python_callable = random_write,
-        op_kwargs={'path': '/home/gerardo/Escritorio/append.txt'}
+        op_kwargs={'path': 'path'}
     )
